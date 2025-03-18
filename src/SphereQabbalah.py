@@ -33,7 +33,6 @@ class Calculator(ttk.Frame):
 
         self.pack(side = RIGHT, expand = True, fill = BOTH)
 
-
 class Description(ttk.Frame):
     def __init__(self, parent):
         super().__init__(parent)
@@ -52,8 +51,6 @@ class Description(ttk.Frame):
         self.my_text.insert(END,"Astral: 1x(tens)" + "\n",'header')
         self.my_text.insert(END,"Physical: 1xx(hundreds)" + "\n",'header')
         self.my_text.insert(END,"=================================================="+"\n")
-
-
 
         self.my_text.insert(END,"Sum" + "\n",'header')
         self.my_text.insert(END,"Conjunction(Conjunctio): is where in the alchemical process; two elements are united to create something greater than the sum of their parts. The merging of elements is a synthesis where a new essence emerges."+ "\n",'description')
@@ -89,9 +86,6 @@ class Buttons(ttk.Frame):
         self.my_text.tag_configure('planes',font=('Verdana',15))
         self.my_text.tag_configure('attributes',font=('Verdana',15))
 
-
-
-
     def display_text(self,operation):
         first = translator(self.first_num)
         second = translator(self.second_number)
@@ -118,7 +112,6 @@ class Buttons(ttk.Frame):
             self.my_text.insert(END,"Astral: " + result[1] + "\n",'planes')
             self.my_text.insert(END,"Physical: " + result[0] + "\n",'planes')
             self.my_text.insert(END,"===================================================================================================")
-
 
     def button_click(self,number):
         #e.delete(0, END)
