@@ -21,9 +21,6 @@ class Buttons(ttk.Frame):
         self.my_text.tag_configure('planes',font=('Verdana',15))
         self.my_text.tag_configure('attributes',font=('Verdana',15))
 
-
-
-
     def display_text(self,operation):
         first = translator(self.first_num)
         second = translator(self.second_number)
@@ -50,7 +47,6 @@ class Buttons(ttk.Frame):
             self.my_text.insert(END,"Astral: " + result[1] + "\n",'planes')
             self.my_text.insert(END,"Physical: " + result[0] + "\n",'planes')
             self.my_text.insert(END,"===================================================================================================")
-
 
     def button_click(self,number):
         #e.delete(0, END)
