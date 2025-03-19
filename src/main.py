@@ -4,7 +4,7 @@ from tkinter import ttk
 from Buttons import Buttons
 #program by Desmond Watts in collaboration with André Consciência 
 
-class App(tk.Tk):
+class Main(tk.Tk):
     def __init__(self):
 
         #Main setup
@@ -62,4 +62,4 @@ class Description(ttk.Frame):
         self.my_text.insert(END,"Dissolution(Solutio): is the alchemical process of breaking down the rigid structures into a fluid state, where what remains is now softened, dissolved, and made malleable."+"\n", 'description')
         self.my_text.insert(END,"=================================================="+"\n")
 
-App()
+Main()
