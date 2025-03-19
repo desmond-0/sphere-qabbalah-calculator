@@ -18,13 +18,12 @@ class App(tk.Tk):
         # run
         self.mainloop()
 
-#Creates and contains Calculator on right side of window
+#Creates frame to contain Calculator 
 class Calculator(ttk.Frame):
     def __init__(self, parent):
         super().__init__(parent)
         ttk.Label(self).pack(padx = 20, pady = 20)# right side
         self.Buttons = Buttons(self)
-        self.Description = Description(self)
         self.pack(side = RIGHT, expand = True, fill = BOTH)
 
 #Creates and contains Description on left side of window
